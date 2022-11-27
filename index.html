@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pool Estimator</title>
+	</head>
+	<body id="body">
+		<h1>Pool Cost Estimator</h1>
+		<h2>Gallon Size</h2>
+		<div class="input-section">
+			Pool length
+			<input id="pool-len" type="number" placeholder="length" /> <br />
+			Pool width
+			<input id="pool-wid" type="number" placeholder="width" /> <br />
+			Average depth
+			<input id="pool-depth" type="number" placeholder="depth" />
+		</div>
+		<div id="gallon-placeholder"></div>
+		<h2>Materials</h2>
+		<div class="input-section">
+			Tile perimeter
+			<input id="tile-perimeter" type="number" placeholder="feet" />
+			Tile dollar/foot
+			<input id="tile-dollar-foot" type="number" placeholder="$" /> <br />
+			Coping perimeter
+			<input id="coping-perimeter" type="number" placeholder="feet" />
+			Coping dollar/foot
+			<input id="coping-dollar-foot" type="number" placeholder="$" />
+			Bull Nose?
+			<input id="bullnose" type="checkbox" />
+		</div>
+		<div id="material-placeholder"></div>
+
+		<button id="generate-report-button" type="button">Generate Report</button>
+		<script src="index.js"></script>
+	</body>
+</html>
