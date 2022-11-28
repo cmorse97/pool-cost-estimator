@@ -7,7 +7,10 @@
 		<title>Pool Estimator</title>
 	</head>
 	<body id="body">
+		<!-- Report generation page -->
 		<h1>Pool Cost Estimator</h1>
+
+		<!-- Gallon size section -->
 		<h2>Gallon Size</h2>
 		<div class="input-section">
 			Pool length
@@ -17,7 +20,10 @@
 			Average depth
 			<input id="pool-depth" type="number" placeholder="depth" />
 		</div>
+		<!-- Placeholder for final number for gallon size -->
 		<div id="gallon-placeholder"></div>
+
+		<!-- Material cost section -->
 		<h2>Materials</h2>
 		<div class="input-section">
 			Tile perimeter
@@ -29,10 +35,58 @@
 			Coping dollar/foot
 			<input id="coping-dollar-foot" type="number" placeholder="$" />
 			Bull Nose?
-			<input id="bullnose" type="checkbox" />
+			<input id="bullnose" type="checkbox" /> <br />
+			Decking Sqft
+			<input id="decking-sqft" type="number" placeholder="sqft" />
+			Decking dollar/sqft
+			<input id="decking-dollar-sqft" type="number" placeholder="$" /> <br />
+			Gunite sqft
+			<input id="gunite-sqft" type="number" placeholder="sqft" />
+			Gunite dollar/sqft
+			<input id="gunite-dollar-sqft" type="number" placeholder="sqft" /><br />
+			Plumbing foot
+			<input id="plumbing-feet" type="number" placeholder="feet" />
+			Plumbing dollar/foot
+			<input id="plumbing-dollar-foot" type="number" placeholder="$" /><br />
+			Equipment Unit
+			<input id="equipment-unit" type="number" placeholder="unit" />
+			Equipment Cost/Unit
+			<input id="equipment-dollar-unit" type="number" placeholder="$" /><br />
+			Plaster Sqft
+			<input id="plaster-sqft" type="number" placeholder="sqft" />
+			Plaster dollar/sqft
+			<input id="plaster-dollar-sqft" type="number" placeholder="$" /><br />
+			Electrical foot
+			<input id="electrical-foot" type="number" placeholder="feet" />
+			Electrical dollar/foot
+			<input id="electrical-dollar-foot" type="number" placeholder="$" /><br />
 		</div>
+		<!-- Placeholder for final number for material cost -->
 		<div id="material-placeholder"></div>
 
+		<h2>Labor Cost</h2>
+		<div class="input-secton">
+			Excavation
+			<input
+				id="excavation-rate"
+				type="number"
+				placeholder="Labor Rate"
+			/><br />
+			Plumbing
+			<input id="plumbing-rate" type="number" placeholder="Labor Rate" /><br />
+			Gunite
+			<input id="gunite-rate" type="number" placeholder="Labor Rate" /><br />
+			Surface
+			<input id="surface-rate" type="number" placeholder="Labor Rate" /><br />
+			Decking
+			<input id="decking-rate" type="number" placeholder="Labor Rate" /><br />
+			Equipment
+			<input id="equipment-rate" type="number" placeholder="Labor Rate" /><br />
+			Electrical
+			<input id="electrical-rate" type="number" placeholder="Labor Rate" />
+		</div>
+
+		<!-- Button to execute function to generate report -->
 		<button id="generate-report-button" type="button">Generate Report</button>
 		<script src="index.js"></script>
 	</body>
